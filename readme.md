@@ -21,7 +21,7 @@
 </div>
 <!-- /ds header -->
 
-# binderhub-template
+# binderhub-redis
 
 A repository template for launching specific interfaces on [binderhub](https://github.com/jupyterhub/binderhub) instances.
 
@@ -63,55 +63,55 @@ The list below provides the badges and the hyperlinks for launching one of the s
 
 #### Jupyter 
   
-  - [![launch @ mybinder.org][badge-jupyter-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=tree)
+  - [![launch @ mybinder.org][badge-jupyter-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=tree)
 
-  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=tree)
+  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=tree)
 
-  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=tree)
+  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=tree)
 
 
 #### JupyterLab 
   
-  - [![launch @ mybinder.org][badge-jupyterlab-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=lab)
+  - [![launch @ mybinder.org][badge-jupyterlab-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=lab)
 
-  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=lab)
+  - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=lab)
 
-  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=lab)
+  - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=lab)
       
 #### Rstudio 
   
-  - [![launch @ mybinder.org][badge-rstudio-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=rstudio)
+  - [![launch @ mybinder.org][badge-rstudio-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
 
-  - [![launch @ gesis.org][badge-rstudio-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=rstudio)
+  - [![launch @ gesis.org][badge-rstudio-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
 
-  - [![launch @ pangeo.io][badge-rstudio-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=rstudio)
+  - [![launch @ pangeo.io][badge-rstudio-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
 
       
 #### Shiny 
   
-  - [![launch @ mybinder.org][badge-shiny-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=shiny)
+  - [![launch @ mybinder.org][badge-shiny-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
 
-  - [![launch @ gesis.org][badge-shiny-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=shiny)
+  - [![launch @ gesis.org][badge-shiny-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
 
-  - [![launch @ pangeo.io][badge-shiny-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=shiny)
+  - [![launch @ pangeo.io][badge-shiny-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
 
       
 #### Nteract 
   
-  - [![launch @ mybinder.org][badge-nteract-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=nteract)
+  - [![launch @ mybinder.org][badge-nteract-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
 
-  - [![launch @ gesis.org][badge-nteract-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=nteract)
+  - [![launch @ gesis.org][badge-nteract-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
 
-  - [![launch @ pangeo.io][badge-nteract-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=nteract)
+  - [![launch @ pangeo.io][badge-nteract-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
 
 
 #### Stencila 
   
-  - [![launch @ mybinder.org][badge-stencila-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-template/master?urlpath=stencila)
+  - [![launch @ mybinder.org][badge-stencila-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
 
-  - [![launch @ gesis.org][badge-stencila-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-template/master?urlpath=stencila)
+  - [![launch @ gesis.org][badge-stencila-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
 
-  - [![launch @ pangeo.io][badge-stencila-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-template/master?urlpath=stencila)
+  - [![launch @ pangeo.io][badge-stencila-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
 
     
 ### Launching this repository locally using [repo2docker](https://github.com/jupyter/repo2docker)
@@ -127,7 +127,7 @@ Please also be aware that the `--ip 0.0.0.0` directive will start a sever which 
 ```bash
 repo2docker -p 8888:8888 \
             -v $(echo ~):$(echo ~)/local-home \
-            https://github.com/thedatasociety/binderhub-template \
+            https://github.com/thedatasociety/binderhub-redis \
             jupyter lab --ip 0.0.0.0 --NotebookApp.token='dstoken1234567'
 ```
 
@@ -157,10 +157,10 @@ See the [repo2docker](https://github.com/jupyter/repo2docker) documentation for 
 
 <!-- icons -->
 
-[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/binderhub-template/master/resources/images/twitter-icon.png
-[icon-slack]:https://raw.githubusercontent.com/thedatasociety/binderhub-template/master/resources/images/slack-icon.png
-[icon-github]:https://raw.githubusercontent.com/thedatasociety/binderhub-template/master/resources/images/github-icon.png
-[icon-docker]:https://raw.githubusercontent.com/thedatasociety/binderhub-template/master/resources/images/docker-icon.png
+[icon-twitter]:https://raw.githubusercontent.com/thedatasociety/binderhub-redis/master/resources/images/twitter-icon.png
+[icon-slack]:https://raw.githubusercontent.com/thedatasociety/binderhub-redis/master/resources/images/slack-icon.png
+[icon-github]:https://raw.githubusercontent.com/thedatasociety/binderhub-redis/master/resources/images/github-icon.png
+[icon-docker]:https://raw.githubusercontent.com/thedatasociety/binderhub-redis/master/resources/images/docker-icon.png
 
 <!-- JupyterLab badges -->
 
