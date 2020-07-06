@@ -17,7 +17,7 @@ jupyter serverextension enable jupyterlab_sql --py --sys-prefix
 
 # Table of contents Jupyter Lab Extension
 echo "Table of contents Jupyter Lab extension install"
-# jupyter labextension install @jupyterlab/toc --no-build 
+jupyter labextension install @jupyterlab/toc --no-build 
 
 # Jupyter/Jupyterlab extension for proxying internal applications
 # echo "Jupyter/Jupyterlab proxy extension install"
@@ -27,7 +27,7 @@ echo "Table of contents Jupyter Lab extension install"
 
 # Building everything up
 echo "Building everything up (jupyter lab build)"
-# jupyter lab build 
+jupyter lab build 
 
 ###############################################################
 #             moving to a local installation folder           #
