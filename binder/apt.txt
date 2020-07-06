@@ -1,0 +1,12 @@
+# system helpers
+htop
+vim
+curl
+wget
+net-tools
+
+
+# redis dependencies
+gcc
+build-essential
+libc-bin

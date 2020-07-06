@@ -1,0 +1,7 @@
+#!/bin/bash
+
+redis-server &
+
+sleep 10
+
+redis-cli ping

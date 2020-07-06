@@ -1,0 +1,94 @@
+#!/bin/bash
+
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+# Beakerx installation 
+# echo "Beakerx install"
+# beakerx install
+# echo "Beakerx extensions install"
+# jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build 
+# jupyter labextension install beakerx-jupyterlab --no-build 
+
+# ipython-sql extension install
+echo "Ipython-sql extension install"
+jupyter serverextension enable jupyterlab_sql --py --sys-prefix
+
+# Table of contents Jupyter Lab Extension
+echo "Table of contents Jupyter Lab extension install"
+# jupyter labextension install @jupyterlab/toc --no-build 
+
+# Jupyter/Jupyterlab extension for proxying internal applications
+# echo "Jupyter/Jupyterlab proxy extension install"
+# jupyter serverextension enable --py jupyter_server_proxy
+# jupyter labextension install jupyterlab-server-proxy
+
+
+# Building everything up
+echo "Building everything up (jupyter lab build)"
+# jupyter lab build 
+
+###############################################################
+#             moving to a local installation folder           #
+###############################################################
+
+mkdir ~/resources/local
+cd    ~/resources/local
+
+
+###############################################################
+#             redis installation commands             #
+###############################################################
+
+export REDIS_VERSION=6.0.5
+echo "export REDIS_VERSION=${REDIS_VERSION}" >> ~/.bashrc
+echo "export REDIS_VERSION=${REDIS_VERSION}" >> ~/.profile
+
+export REDIS_HOME=$(pwd)/redis-${REDIS_VERSION}
+echo "export REDIS_HOME=${REDIS_HOME}"       >> ~/.bashrc
+echo "export REDIS_HOME=${REDIS_HOME}"       >> ~/.profile
+
+       
+wget http://download.redis.io/releases/redis-${REDIS_VERSION}.tar.gz  && \
+tar xvzf redis-${REDIS_VERSION}.tar.gz                                && \
+rm       redis-${REDIS_VERSION}.tar.gz                                && \
+cd       redis-${REDIS_VERSION}
+make
+# make test
+
+mkdir bin
+cp src/redis-server bin/
+cp src/redis-cli bin/
+
+# adding bin/ to $path
+echo "export PATH=\$PATH:\$REDIS_HOME/bin"   >> ~/.bashrc
+echo "export PATH=\$PATH:\$REDIS_HOME/bin"   >> ~/.profile
+
+
+
+###############################################################
+#             vscode installation commands                    #
+###############################################################
+
+cd    ~/resources/local
+
+export CODE_SERVER_VERSION=3.4.1
+echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
+echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.profile
+
+export CODE_SERVER_HOME=$(pwd)/code-server-${CODE_SERVER_VERSION}
+echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.bashrc
+echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
+
+# Download and install VS Code server
+wget -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-x86_64.tar.gz                            
+tar xzf code-server.tar.gz
+mv code-server-${CODE_SERVER_VERSION}-linux-x86_64 code-server-$CODE_SERVER_VERSION
+rm -rf code-server.tar.gz
+
+# adding bin/ to $path
+echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
+echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
+
+
