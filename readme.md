@@ -32,10 +32,7 @@ A repository template for launching specific interfaces on [binderhub](https://g
 - [Launching this repository on a binderhub instance](#launching-this-repository-on-a-binderhub-instance)
   - [Jupyter](#jupyter)
   - [JupyterLab](#jupyterlab)
-  - [Rstudio](#rstudio)
-  - [Shiny](#shiny)
-  - [Nteract](#nteract)
-  - [Stencila](#stencila)
+
 - [Launching this repository locally using repo2docker](#launching-this-repository-locally-using-repo2docker)
 - [Contributing](#contributing)
 - [License](#license)
@@ -48,10 +45,7 @@ A repository template for launching specific interfaces on [binderhub](https://g
 [Binderhub](https://github.com/jupyterhub/binderhub) uses [repo2docker](https://github.com/jupyter/repo2docker) for launching and serving the computational environments. Repo2docker supports the following interfaces: 
 - [Jupyter](https://jupyter.org/)
 - [JupyterLab](https://github.com/jupyterlab/jupyterlab)
-- [Rstudio](https://rstudio.com/)
-- [Nteract](https://nteract.io/)
-- [Shiny](https://shiny.rstudio.com/)
-- [Stencila](https://stenci.la/)
+
 
 The list below contains the known binderhub instances.
 - [mybinder.org](mybinder.org) (a [federation](https://blog.jupyter.org/the-international-binder-federation-4f6235c1537e) of [Binderhub](https://github.com/jupyterhub/binderhub) instances)
@@ -77,41 +71,7 @@ The list below provides the badges and the hyperlinks for launching one of the s
   - [![launch @ gesis.org][badge-jupyterlab-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=lab)
 
   - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=lab)
-      
-#### Rstudio 
-  
-  - [![launch @ mybinder.org][badge-rstudio-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
-
-  - [![launch @ gesis.org][badge-rstudio-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
-
-  - [![launch @ pangeo.io][badge-rstudio-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=rstudio)
-
-      
-#### Shiny 
-  
-  - [![launch @ mybinder.org][badge-shiny-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
-
-  - [![launch @ gesis.org][badge-shiny-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
-
-  - [![launch @ pangeo.io][badge-shiny-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=shiny)
-
-      
-#### Nteract 
-  
-  - [![launch @ mybinder.org][badge-nteract-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
-
-  - [![launch @ gesis.org][badge-nteract-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
-
-  - [![launch @ pangeo.io][badge-nteract-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=nteract)
-
-
-#### Stencila 
-  
-  - [![launch @ mybinder.org][badge-stencila-mybinder-org]](https://mybinder.org/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
-
-  - [![launch @ gesis.org][badge-stencila-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
-
-  - [![launch @ pangeo.io][badge-stencila-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/binderhub-redis/master?urlpath=stencila)
+   
 
     
 ### Launching this repository locally using [repo2docker](https://github.com/jupyter/repo2docker)
