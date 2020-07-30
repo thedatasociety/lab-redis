@@ -1,6 +1,7 @@
 #!/bin/bash
 
-redis-server &
+
+nohup  redis-server &> ~/logs/redis-$REDIS_VERSION.log &
 
 sleep 10
 

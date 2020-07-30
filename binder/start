@@ -1,13 +1,16 @@
 #!/bin/bash
 
 
+mkdir logs
+
 chmod +x ~/binder/start.redis 
+chmod +x ~/binder/start.vscode 
 
 # starting redis in parallel
 ~/binder/start.redis &
 
 # starting vscode in parallel
-code-server .  --auth none &
+~/binder/start.vscode   &
 
 
 

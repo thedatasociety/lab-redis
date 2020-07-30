@@ -1,0 +1,65 @@
+# "list keys in your redis server"
+
+KEYS *
+KEYS demo.*
+
+# "there is no command to create a key. Keys are created when key-value pairs are set."
+
+SET chave valor
+
+
+SET mykey value
+SET foo bar
+SET demo.redis.cli.keys 12999030039
+
+
+
+# Caching values
+
+SET user.5.username matheusmota
+SET user.5.session KJASKJDH8as7KASDLKnakjsndAKD
+
+SET user.5.username fulanosilva
+SET user.5.session iojhasjOIJASmnnOAIJSD
+
+SET user.5.username jotap
+SET user.5.session KJASKJDH8as7KASDLKnakjsndAKD
+
+
+SADD demo.redis.cli.set0001 apple
+HSET demo.redis.cli.hash001 movieId 3 title "Shawshank Redemption" genres "Comedy|Adventure" year 1998
+ZADD demo.redis.cli.10202-scoreboard 6 James 2 Shane 9 Ezekiel 1 Darwin
+PFADD demo.redis.cli.hll001 
+
+KEYS *
+KEYS demo.*
+
+# "confirm the existence of a key"
+
+EXISTS demo.redis.cli.hll001
+EXISTS demo.redis.cli.hll002s
+
+
+# "confirm the TTL of a key"
+TTL demo.redis.cli.set0001
+PTTL demo.redis.cli.10202-scoreboard
+
+# "set the TTL of a key"
+
+EXPIRE foos 5					# in seconds
+PEXPIRE mylist 3600000				# in milliseconds
+
+
+# "delete a key" 
+
+DEL demo.redis.cli.keys
+
+
+# "check the type of the value held by a key"
+
+TYPE demo.redis.cli.set0001
+TYPE demo.redis.cli.hash001
+TYPE demo.redis.cli.10202-scoreboard
+TYPE demo.redis.cli.hll001 
+
+# "checkout out other commands for key management from the official command referent https://redis.io/commands#generic"
