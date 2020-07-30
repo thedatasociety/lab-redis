@@ -4,6 +4,7 @@ vim
 curl
 wget
 net-tools
+locate
 
 
 # redis dependencies
