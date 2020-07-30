@@ -1,4 +1,5 @@
 {
+    "workbench.colorTheme": "Monokai",
     "files.exclude": {
         "**/.bashrc": true,
         "**/.bash_logout": true,
