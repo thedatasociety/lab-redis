@@ -19,7 +19,7 @@ jupyter-server-proxy
 
 
 #vscode
-numpy
+jupyter-server-proxy
 jupyter-vscode-proxy
 
 # last working freeze
