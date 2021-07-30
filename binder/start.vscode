@@ -1,14 +1,28 @@
 #!/bin/bash
 
-mkdir -p /home/$USER/.config/Code/User
-cp ~/.vscode/keybindings.json /home/$USER/.config/Code/User/
 
-mkdir -p /home/$USER/.config/code-server/User
-cp ~/.vscode/keybindings.json /home/$USER/.config/code-server/User/
-
+###############################################
+# Copying vscode config files
+###############################################
 mkdir -p /home/$USER/.local/share/code-server/User/
-cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
+cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 
-code-server --install-extension vitorsalgado.vscode-redis
 
-code-server .  --auth none &
+###############################################
+# Installing vs code extensions
+###############################################
+
+code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
+
+# open extension gallery
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+code-server --install-extension 'vitorsalgado.vscode-redis' && sleep 1
+code-server --install-extension 'cweijan.vscode-redis-client' && sleep 1
+code-server --install-extension 'kdcro101.vscode-redis' && sleep 1
+                                
+###############################################
+# Starting code-server
+###############################################
+code-server . --auth none &

@@ -1,5 +1,13 @@
 {
-    "workbench.colorTheme": "Monokai",
+    "jupyter.alwaysTrustNotebooks": true,
+    "workbench.editorAssociations": [
+      {
+        "viewType": "jupyter.notebook.ipynb",
+        "filenamePattern": "*.ipynb"
+      }
+    ],
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme",
     "files.exclude": {
         "**/.bashrc": true,
         "**/.bash_logout": true,
