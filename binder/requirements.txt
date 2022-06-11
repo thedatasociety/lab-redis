@@ -14,8 +14,8 @@ jupyterlab_sql
 mysqlclient
 
 # jupyter/jupyterlab extensions
-jupyterlab
 jupyter-server-proxy
+jupyter-vscode-proxy
 
 
 #vscode
