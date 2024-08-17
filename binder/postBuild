@@ -4,10 +4,6 @@
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-# ipython-sql extension install
-echo "Ipython-sql extension install"
-jupyter serverextension enable jupyterlab_sql --py --sys-prefix
-
 # Building everything up
 echo "Building everything up (jupyter lab build)"
 jupyter lab build 
@@ -21,7 +17,7 @@ cd    ~/resources/local
 
 
 ###############################################################
-#             redis installation commands             #
+#             redis installation                              #
 ###############################################################
 
 export REDIS_VERSION=6.0.5
@@ -51,7 +47,7 @@ echo "export PATH=\$PATH:\$REDIS_HOME/bin"   >> ~/.profile
 
 
 ###############################################################
-#             vscode installation commands                    #
+#             vscode installation                             #
 ###############################################################
 
 cd    ~/resources/local
