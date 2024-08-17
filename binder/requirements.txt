@@ -7,5 +7,6 @@ ipywidgets
 
 # lab-related packages
 redis
+redis_kernel
 sqlalchemy
 ipython-sql
