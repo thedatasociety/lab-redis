@@ -6,6 +6,6 @@ jupyterlab-rise
 ipywidgets
 
 # lab-related packages
+redis
 sqlalchemy
 ipython-sql
-jupyterlab_sql

@@ -33,7 +33,7 @@ EXISTS user.5.username
 
 
 
-GET *
+GET chave
 KEYS user.*
 KEYS user.5.*
 GET user.9.session 

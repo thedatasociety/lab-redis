@@ -29,7 +29,7 @@ echo "export REDIS_HOME=${REDIS_HOME}"       >> ~/.bashrc
 echo "export REDIS_HOME=${REDIS_HOME}"       >> ~/.profile
 
        
-wget http://download.redis.io/releases/redis-${REDIS_VERSION}.tar.gz  && \
+wget http://download.redis.io/releases/redis-${REDIS_VERSION}.tar.gz -q && \
 tar xvzf redis-${REDIS_VERSION}.tar.gz                                && \
 rm       redis-${REDIS_VERSION}.tar.gz                                && \
 cd       redis-${REDIS_VERSION}
@@ -64,7 +64,7 @@ echo "export CODE_SERVER_HOME=${CODE_SERVER_HOME}"       >> ~/.profile
 
 
 # Download and install VS Code server
-wget -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz
+wget -O code-server.tar.gz https://github.com/cdr/code-server/releases/download/v$CODE_SERVER_VERSION/code-server-$CODE_SERVER_VERSION-linux-amd64.tar.gz -q
 tar xzf code-server.tar.gz
 mv code-server-${CODE_SERVER_VERSION}-linux-amd64 code-server-$CODE_SERVER_VERSION
 rm -rf code-server.tar.gz
