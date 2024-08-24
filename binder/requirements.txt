@@ -4,8 +4,10 @@ jupyter-vscode-proxy
 jupyterlab
 jupyterlab-rise
 ipywidgets
+jupyter_contrib_nbextensions
 
 # lab-related packages
 redis
+pandas
 sqlalchemy
 ipython-sql

@@ -77,3 +77,10 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 echo "export SERVICE_URL=https://open-vsx.org/vscode/gallery"  >> ~/.bashrc
 echo "export ITEM_URL=https://open-vsx.org/vscode/item"        >> ~/.profile
 
+###############################################################
+#             adding extensions folder to iPython            #
+###############################################################
+
+
+echo "export PYTHONPATH=~/.ipython/extensions:\$PYTHONPATH"        >> ~/.bashrc
+echo "export PYTHONPATH=~/.ipython/extensions:\$PYTHONPATH"        >> ~/.profile
